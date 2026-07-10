@@ -27,9 +27,11 @@ export default [
     ],
     output: [
       {
-        file: "dist/index.esm.js",
+        dir: "dist",
         format: "es",
         sourcemap: true,
+        preserveModules: true,
+        preserveModulesRoot: "src",
       },
     ],
     external: ["lit", "lit/html", "lit/decorators.js"],
@@ -38,8 +40,10 @@ export default [
     input: "src/index.ts",
     plugins: [dts({ tsconfig: path.resolve(__dirname, "tsconfig.json") })],
     output: {
-      file: "dist/index.d.ts",
+      dir: "dist",
       format: "es",
+      preserveModules: true,
+      preserveModulesRoot: "src",
     },
   },
 ];
