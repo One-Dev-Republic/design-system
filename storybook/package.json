@@ -5,28 +5,29 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
-    "prebuild": "pnpm --filter ui-components build",
     "build": "tsc && vite build",
     "prebuild:storybook": "pnpm --filter ui-components build",
-    "build:storybook": "storybook build",
-    "start": "vite preview"
+    "build-storybook": "pnpm prebuild:storybook && storybook build",
+    "preview": "vite preview",
+    "chromatic": "npx chromatic --project-token chpt_ed5728e851b9a7b"
   },
   "dependencies": {
     "lit": "^3.3.3",
     "ui-components": "workspace:packages"
   },
   "devDependencies": {
-    "typescript": "~6.0.2",
-    "vite": "^8.1.1",
-    "storybook": "10.4.6",
-    "@storybook/web-components-vite": "10.4.6",
     "@chromatic-com/storybook": "^5.2.1",
-    "@storybook/addon-vitest": "10.4.6",
     "@storybook/addon-a11y": "10.4.6",
     "@storybook/addon-docs": "10.4.6",
-    "vitest": "^4.1.10",
-    "playwright": "^1.61.1",
+    "@storybook/addon-vitest": "10.4.6",
+    "@storybook/web-components-vite": "10.4.6",
     "@vitest/browser-playwright": "^4.1.10",
-    "@vitest/coverage-v8": "^4.1.10"
+    "@vitest/coverage-v8": "^4.1.10",
+    "chromatic": "^18.0.1",
+    "playwright": "^1.61.1",
+    "storybook": "10.4.6",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vitest": "^4.1.10"
   }
 }

@@ -49,19 +49,21 @@ pnpm install
 ## 📋 Roadmap
 
 1. [x] Add branding for Storybook
-2. [ ] Deploy Storybook to Chromatic and make it public
-3. [ ] Create and publish npm library based on ui-components
-4. [ ] Add Husky for running linters, code formatters, and tests before push
-5. [ ] Add commit validator for meaningful commits
-6. [ ] Add Vitest test runner and Lit.js assertion library for unit and component tests
-7. [ ] Add design tokens (CSS custom properties)
-8. [ ] Implement theme system based on design tokens
-9. [ ] Create folder structure in Storybook based on Atomic Design
-10. [ ] Create Dark and Light mode in Storybook and components
-11. [ ] Add shared library for global TypeScript, ESLint, and Prettier config
-12. [ ] Add MIT License
-13. [ ] Add Agent.md file with rules
-14. [ ] Add Change log
+2. [x] Deploy Storybook to Chromatic and make it public
+3. [ ] Add Private domain to public ODR Storybook
+4. [ ] Add Github Actions to publish and build Storybook on every master push
+5. [ ] Create and publish npm library based on ui-components
+6. [ ] Add Husky for running linters, code formatters, and tests before push
+7. [ ] Add commit validator for meaningful commits
+8. [ ] Add Vitest test runner and Lit.js assertion library for unit and component tests
+9. [ ] Add design tokens (CSS custom properties)
+10. [ ] Implement theme system based on design tokens
+11. [ ] Create folder structure in Storybook based on Atomic Design
+12. [ ] Create Dark and Light mode in Storybook and components
+13. [ ] Add shared library for global TypeScript, ESLint, and Prettier config
+14. [ ] Add MIT License
+15. [ ] Add Agent.md file with rules
+16. [ ] Add Change log
 
 ## 📌 Status
 
