@@ -6,6 +6,8 @@ jobs:
   chromatic:
     name: Run Chromatic
     runs-on: ubuntu-24.04
+    env:
+      CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN || vars.CHROMATIC_PROJECT_TOKEN }}
     strategy:
       matrix:
         node-version: [26]
@@ -29,8 +31,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: pnpm ci
+      - name: Skip Chromatic without token
+        if: ${{ env.CHROMATIC_PROJECT_TOKEN == '' }}
+        run: echo "Skipping Chromatic because no project token is configured."
       - name: Run Chromatic
+        if: ${{ env.CHROMATIC_PROJECT_TOKEN != '' }}
         uses: chromaui/action@latest
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          workingDir: ../storybook
+          projectToken: ${{ env.CHROMATIC_PROJECT_TOKEN }}
+          workingDir: storybook
+          buildScriptName: build-storybook
