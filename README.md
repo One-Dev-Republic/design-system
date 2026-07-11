@@ -13,11 +13,12 @@ The project is in early development. I am starting with core foundations and wil
 ## 📦 Tech Stack
 
 - **Typescript**
-- **Lit.js** — web components
-- **Rollup.js** — module bundler
-- **Storybook** — component documentation and e2e testing (future)
-- **ESLint** — linting
-- **Prettier** — code formatting
+- **Lit.js** - web components
+- **Rollup.js** - module bundler
+- **Storybook** - component documentation and e2e testing
+- **Chromatic** - Cloud for Storybook
+- **ESLint** - code linting
+- **Prettier** - code formatting
 - **pnpm** — package manager with workspaces (monorepo)
 
 ## 🗂️ Folder Structure
@@ -50,13 +51,13 @@ pnpm install
 
 1. [x] Add branding for Storybook
 2. [x] Deploy Storybook to Chromatic and make it public
-3. [ ] Add Github Actions to publish and build Storybook on every master push
-4. [ ] Add Private domain to public ODR Storybook
-5. [ ] Create and publish npm library based on ui-components
-6. [ ] Add Husky for running linters, code formatters, and tests before push
-7. [ ] Add commit validator for meaningful commits
-8. [ ] Add Vitest test runner and Lit.js assertion library for unit and component tests
-9. [ ] Add design tokens (CSS custom properties)
+3. [x] Add Github Actions to publish and build Storybook on every master push
+4. [ ] Add Husky for running linters, code formatters, and tests before push
+5. [ ] Add commit validator for meaningful commits
+6. [ ] Add Private domain to public ODR Storybook
+7. [ ] Add Vitest test runner and Lit.js assertion library for unit and component tests
+8. [ ] Add design tokens (CSS custom properties)
+9. [ ] Create and publish npm library based on ui-components
 10. [ ] Implement theme system based on design tokens
 11. [ ] Create folder structure in Storybook based on Atomic Design
 12. [ ] Create Dark and Light mode in Storybook and components
