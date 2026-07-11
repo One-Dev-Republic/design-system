@@ -1,5 +1,7 @@
 # Design System (One Dev Republic)
 
+![One Dev Republic - Łukasz Migut](./storybook/public/one-dev-republic-logo.png)
+
 Design system library for my projects, built with web components (Lit.js), documented and tested with Storybook.
 
 ## ✨ Overview
@@ -22,9 +24,9 @@ The project is in early development. I am starting with core foundations and wil
 
 ```markdown
 /design-system
-    /packages
-        /ui-components
-    /storybook
+/packages
+/ui-components
+/storybook
 ```
 
 ## 🚀 Getting Started
@@ -32,8 +34,8 @@ The project is in early development. I am starting with core foundations and wil
 ### Prerequisites
 
 ```markdown
-  Node.js >= 18
-  pnpm
+Node.js >= 18
+pnpm
 ```
 
 ### Installation
@@ -58,6 +60,8 @@ pnpm install
 10. [ ] Create Dark and Light mode in Storybook and components
 11. [ ] Add shared library for global TypeScript, ESLint, and Prettier config
 12. [ ] Add MIT License
+13. [ ] Add Agent.md file with rules
+14. [ ] Add Change log
 
 ## 📌 Status
 
