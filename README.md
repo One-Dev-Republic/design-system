@@ -1,6 +1,6 @@
 # Design System (One Dev Republic)
 
-[![Build Status](https://github.com/d3usss/design-system/actions/workflows/chromatic.yml/badge.svg)]
+![Build Status](https://github.com/d3usss/design-system/actions/workflows/chromatic.yml/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/d3usss/design-system/badge.svg?branch=feat/add-test-covergage-badge)](https://coveralls.io/github/d3usss/design-system?branch=feat/add-test-covergage-badge)
 ![One Dev Republic - Łukasz Migut](./storybook/public/one-dev-republic-logo.png)
 
