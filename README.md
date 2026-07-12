@@ -26,9 +26,14 @@ The project is in early development. I am starting with core foundations and wil
 
 ```markdown
 /design-system
-/packages
-/ui-components
-/storybook
+|----/.github
+|----/.husky
+|----/.vscode
+|----/packages
+|--------/ui-components
+|------------/src
+|----/storybook
+|--------/src
 ```
 
 ## 🚀 Getting Started
