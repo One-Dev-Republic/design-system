@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 echo "Running pre-push hook"
-echo "-----------------------------------"
+echo "-------------START-----------------"
 echo "Running linting..."
 echo "-----------------------------------"
 pnpm lint
@@ -11,3 +11,4 @@ pnpm test
 echo "-----------------------------------"
 echo "Pre-push hook completed successfully."
 echo "I'AM PUSHING HARD!!!"
+echo "---------------END-----------------"
