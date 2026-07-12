@@ -21,6 +21,9 @@ The project is in early development. I am starting with core foundations and wil
 - **Prettier** - code formatting
 - **pnpm** - package manager with workspaces (monorepo)
 - **Github Actions** - CI/CD
+- **Husky** - pre-push git hook
+- **Pnpm** - packet manger and monorepo
+- **Vitest** - test runner and test coverage
 
 ## 🗂️ Folder Structure
 
