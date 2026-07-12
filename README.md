@@ -1,5 +1,5 @@
 # Design System (One Dev Republic)
-![Build Status](https://github.com/d3usss/design-system/actions/workflows/nazwa-workflow.yml/badge.svg)
+![Build Status](https://github.com/d3usss/design-system/actions/workflows/chromatic.yml/badge.svg)
 ![One Dev Republic - Łukasz Migut](./storybook/public/one-dev-republic-logo.png)
 
 Design system library for my projects, built with web components (Lit.js), documented and tested with Storybook.
