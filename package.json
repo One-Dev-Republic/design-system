@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "test": "pnpm --filter ui-components test -- --run"
+    "test": "pnpm --filter ui-components test -- --run",
+    "test:coverage": "pnpm --filter ui-components coverage -- --run"
   },
   "keywords": [
     "design system",
