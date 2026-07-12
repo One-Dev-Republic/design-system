@@ -19,7 +19,8 @@ The project is in early development. I am starting with core foundations and wil
 - **Chromatic** - Cloud for Storybook
 - **ESLint** - code linting
 - **Prettier** - code formatting
-- **pnpm** — package manager with workspaces (monorepo)
+- **pnpm** - package manager with workspaces (monorepo)
+- **Github Actions** - CI/CD
 
 ## 🗂️ Folder Structure
 
@@ -52,10 +53,10 @@ pnpm install
 1. [x] Add branding for Storybook
 2. [x] Deploy Storybook to Chromatic and make it public
 3. [x] Add Github Actions to publish and build Storybook on every master push
-4. [ ] Add Husky for running linters, code formatters, and tests before push
+4. [x] Add Husky for running linters, code formatters, and tests before push
 5. [ ] Add commit validator for meaningful commits
 6. [ ] Add Private domain to public ODR Storybook
-7. [ ] Add Vitest test runner and Lit.js assertion library for unit and component tests
+7. [x] Add Vitest test runner and Lit.js assertion library for unit and component tests
 8. [ ] Add design tokens (CSS custom properties)
 9. [ ] Create and publish npm library based on ui-components
 10. [ ] Implement theme system based on design tokens

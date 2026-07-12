@@ -21,15 +21,24 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "dev": "rollup -c -w",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build:types": "tsc --emitDeclarationOnly",
+    "coverage": "vitest run --coverage",
+    "test": "vitest",
+    "list": "vitest list",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
+    "@open-wc/testing": "4.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@types/node": "^26.1.1",
+    "@vitest/ui": "^4.1.10",
+    "@web/test-runner-commands": "^1.0.0",
+    "jsdom": "^29.1.1",
     "rollup": "^4.62.2",
     "rollup-plugin-dts": "^6.4.1",
     "rollup-plugin-esbuild": "^6.2.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
   },
   "dependencies": {
     "lit": "^3.3.3"

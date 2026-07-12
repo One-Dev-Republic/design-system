@@ -2,4 +2,5 @@
 echo "Running pre-push hook"
 echo "Running linting..."
 pnpm lint
-
+echo "Running tests..."
+pnpm test

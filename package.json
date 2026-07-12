@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "pnpm --filter ui-components test -- --run"
   },
   "keywords": [
     "design system",

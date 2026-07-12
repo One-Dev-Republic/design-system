@@ -10,9 +10,9 @@ export class UiButton extends LitElement {
   `;
 
   @property()
-  name?: string = "World";
+  name?: string;
 
   render() {
-    return html`<button>Hello, ${this.name}!</button>`;
+    return html`<button>Hello, ${this.name ?? "World"}!</button>`;
   }
 }
