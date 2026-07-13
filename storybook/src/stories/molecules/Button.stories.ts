@@ -4,12 +4,12 @@ import { Button } from "ui-components";
 
 const meta: Meta<Button> = {
   title: "Molecules/Button",
-  component: "ui-button",
+  component: "ord-button",
   tags: ["autodocs"],
   argTypes: {
     name: { control: "text" },
   },
-  render: () => html`<ui-button name="Primary Button"></ui-button>`,
+  render: () => html`<ord-button name="Primary Button"></ord-button>`,
 };
 
 export default meta;
