@@ -26,37 +26,71 @@ export class WorkExperience extends BaseClass {
 
   static styles = [
     css`
+      section {
+        border: 1px solid oklch(43.9% 0 0);
+        background-color: oklch(26.9% 0 0);
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+      }
+
       .item {
         display: flex;
-        gap: 1rem;
-        margin: 0.75rem 0;
+        gap: 2.5rem;
+        margin: 0;
+        padding-bottom: 1rem;
       }
 
       .date {
         color: var(--muted);
-        font-size: 0.85rem;
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .company,
+      .role {
+        font-weight: 600;
+      }
+
+      h2 {
+        padding-bottom: 1rem;
+      }
+
+      .company,
+      h2 {
+        color: var(--main-accent);
       }
 
       .role {
-        font-weight: 600;
-        color: var(--text);
+        color: #fff;
       }
 
       .icon {
-        width: 36px;
-        height: 36px;
+        position: relative;
+        width: 24px;
+        min-width: 24px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+      }
+
+      .icon::after {
+        content: "";
+        position: absolute;
+        top: 3.2rem;
+        bottom: 0.8rem;
+        left: 50%;
+        width: 1px;
+        transform: translateX(-0.5px);
+        background-color: oklch(37.1% 0 0);
+      }
+
+      .item:last-child .icon::after {
+        display: none;
       }
     `,
   ];
 
   render() {
-    if (!this.translations) {
-      return html``;
-    }
-
     return html`
       <section>
         <h2>${this.translations.title}</h2>
@@ -68,12 +102,17 @@ export class WorkExperience extends BaseClass {
               </div>
               <div>
                 <div class="date">${item.translations.period}</div>
-                <a href="${item.links.company}" class="role"
-                  >${item.translations.company}</a
+                <a
+                  href="${item.links.company}"
+                  class="company"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  ${item.translations.company}
+                </a>
                 <p class="role"><i>${item.translations.role}</i></p>
                 <ul class="muted">
-                  ${item.translations.bullets.map((bullet) => html`<li>${bullet}</li>`)}
+                  ${item.translations.bullets.map((bullet) => html`<li><p>${bullet}</p></li>`)}
                 </ul>
               </div>
             </div>
