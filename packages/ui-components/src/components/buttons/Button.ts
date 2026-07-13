@@ -1,8 +1,8 @@
 import { LitElement, css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-@customElement("ui-button")
-export class UiButton extends LitElement {
+@customElement("ord-button")
+export class Button extends LitElement {
   static styles = css`
     :host {
       color: blue;

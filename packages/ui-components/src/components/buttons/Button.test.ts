@@ -1,16 +1,16 @@
 import { fixture, html } from "@open-wc/testing";
 import { expect, describe, it, beforeEach } from "vitest";
 
-import type { UiButton } from "@components/buttons/Button";
+import type { Button } from "@components/buttons/Button";
 import "@components/buttons/Button";
 
-describe("UiButton component", () => {
-  let el: UiButton;
+describe("OrdButton component", () => {
+  let el: Button;
   const name = "World";
 
   beforeEach(async () => {
-    expect(customElements.get("ui-button")).toBeDefined();
-    el = await fixture(html`<ui-button name="${name}"></ui-button>`);
+    expect(customElements.get("ord-button")).toBeDefined();
+    el = await fixture(html`<ord-button name="${name}"></ord-button>`);
     await el.updateComplete;
   });
 
