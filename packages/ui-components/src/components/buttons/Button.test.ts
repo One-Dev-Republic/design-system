@@ -1,8 +1,8 @@
 import { fixture, html } from "@open-wc/testing";
 import { expect, describe, it, beforeEach } from "vitest";
 
-import type { UiButton } from "./Button";
-import "./Button";
+import type { UiButton } from "@components/buttons/Button";
+import "@components/buttons/Button";
 
 describe("UiButton component", () => {
   let el: UiButton;

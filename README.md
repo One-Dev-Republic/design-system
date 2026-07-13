@@ -12,6 +12,11 @@ This is a personal design system focused on building reusable, framework-agnosti
 
 The project is in early development. I am starting with core foundations and will progressively build upon them.
 
+## 📌 Status
+
+In Progress (Beta) — foundations are being built. Expect frequent changes.
+First version will for my personal website then I will try make it more generic.
+
 ## 📦 Tech Stack
 
 - **Typescript**
@@ -76,10 +81,6 @@ pnpm install
 14. [ ] Add MIT License
 15. [ ] Add Agent.md file with rules
 16. [ ] Add Change log
-
-## 📌 Status
-
-In Progress (Beta) — foundations are being built. Expect frequent changes.
 
 ## 👤 Author
 

@@ -12,6 +12,13 @@
     "rootDir": "src",
     "outDir": "dist",
     "declarationDir": "dist",
+    "paths": {
+      "@root/*": ["./*"],
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@translations/*": ["./src/translations/*"],
+      "@helpers/*": ["./src/helpers/*"]
+    },
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
