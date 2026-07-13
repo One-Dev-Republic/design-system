@@ -1,9 +1,9 @@
 import type { Preview } from "@storybook/web-components-vite";
+import { html } from "lit";
+import { themes } from "storybook/theming";
+
 // @ts-expect-error Storybook preview config allows side-effect CSS imports.
 import "../src/themes/odr-global.css";
-import { html } from "lit";
-
-import { themes } from "storybook/theming";
 
 const preview: Preview = {
   decorators: [(Story) => html`<div id="container">${Story()}</div>`],

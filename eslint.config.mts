@@ -1,12 +1,31 @@
+import css from "@eslint/css";
 import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
 import json from "@eslint/json";
 import markdown from "@eslint/markdown";
-import css from "@eslint/css";
+import type { Linter } from "eslint";
 import { defineConfig } from "eslint/config";
-
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
+import globals from "globals";
+import tseslint from "typescript-eslint";
+
+const importSortRules: Linter.RulesRecord = {
+  "simple-import-sort/imports": [
+    "error",
+    {
+      groups: [
+        ["^node:"],
+        [
+          "^@(?!root(?:/|$)|components(?:/|$)|styles(?:/|$)|helpers(?:/|$))\\w",
+          "^\\w",
+        ],
+        ["^@(?:root|components|styles|helpers)(?:/|$)"],
+        ["^\\."],
+      ],
+    },
+  ],
+  "simple-import-sort/exports": "error",
+};
 
 export default defineConfig([
   {
@@ -19,14 +38,17 @@ export default defineConfig([
   },
   {
     files: ["**/*.{js,mjs,cjs}"],
-    plugins: { js },
+    plugins: { js, "simple-import-sort": simpleImportSort },
     extends: ["js/recommended"],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    rules: importSortRules,
   },
   {
     files: ["**/*.{ts,mts,cts}"],
     extends: tseslint.configs.recommended,
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    plugins: { "simple-import-sort": simpleImportSort },
+    rules: importSortRules,
   },
   {
     files: ["**/*.json"],

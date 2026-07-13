@@ -1,10 +1,11 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+
 import alias from "@rollup/plugin-alias";
 import image from "@rollup/plugin-image";
 import resolve from "@rollup/plugin-node-resolve";
-import esbuild from "rollup-plugin-esbuild";
 import dts from "rollup-plugin-dts";
+import esbuild from "rollup-plugin-esbuild";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

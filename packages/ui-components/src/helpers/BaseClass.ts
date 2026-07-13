@@ -1,5 +1,5 @@
-import { LitElement, type TemplateResult } from "lit";
 import { msg, type MsgOptions } from "@lit/localize";
+import { LitElement, type TemplateResult } from "lit";
 
 export class BaseClass extends LitElement {
   protected get msg(): (

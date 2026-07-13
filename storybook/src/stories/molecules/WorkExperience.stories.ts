@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/web-components-vite";
 import { html } from "lit";
-
 import type { WorkExperience, WorkExperienceTranslations } from "ui-components";
+
 import translations from "../../translations/en";
 
 const workExperienceTranslations = translations[

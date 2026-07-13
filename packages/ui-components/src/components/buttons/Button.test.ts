@@ -1,7 +1,8 @@
 import { fixture, html } from "@open-wc/testing";
-import { expect, describe, it, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 
 import type { Button } from "@components/buttons/Button";
+
 import "@components/buttons/Button";
 
 describe("OrdButton component", () => {

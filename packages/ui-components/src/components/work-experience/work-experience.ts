@@ -1,6 +1,8 @@
-import { html, css } from "lit";
+import { css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
+
 import { BaseClass } from "@helpers/BaseClass";
+
 import logoMarkUrl from "../../assets/logo-mark.png";
 
 export type WorkExperienceTranslations = {
