@@ -218,10 +218,10 @@ const en = {
   },
   "odr-share-group": { share: "Share", likes: "875" },
   "odr-hero": {
-    heading: "Welcome",
-    firstP: "",
-    colorizedSpan: "",
-    secondP: "",
+    heading: "Let's build something incredible together.",
+    firstParagraph: "Half human /",
+    colorizedSpan: "Half Amazing",
+    secondParagraph: "time is money, let's make the most of it.",
   },
   "odr-header": {
     home: "Home",

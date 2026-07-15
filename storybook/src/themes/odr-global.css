@@ -8,7 +8,7 @@
   --main-accent-hover: #eb9c54;
   --text: oklch(70.8% 0 0);
   --muted: #6b7280;
-  --bg: #ffffff;
+  --bg: #000;
 
   /**
    * Global font variables
@@ -35,35 +35,36 @@ body {
     sans-serif;
 }
 
-#container {
+.container {
+  width: 100%;
   max-width: 85rem;
   margin: 0 auto;
   padding: 1rem;
   font-size: var(--default-font-size);
 }
 
-#container h2 {
+.container h2 {
   color: var(--main-accent);
   font-weight: 600;
   margin: 0 0 0.5rem 0;
 }
 
-#container p {
+.container p {
   color: var(--muted);
   margin: 0;
 }
 
-#container a {
+.container a {
   color: var(--main-accent);
   text-decoration: none;
 }
 
-#container a:hover {
+.container a:hover {
   color: var(--main-accent-hover);
   text-decoration: underline;
 }
 
-#container li {
+.container li {
   line-height: 1;
 }
 

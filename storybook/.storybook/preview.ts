@@ -9,7 +9,7 @@ import "ui-components";
 import "../src/themes/odr-global.css";
 
 const preview: Preview = {
-  decorators: [(Story) => html`<div id="container">${Story()}</div>`],
+  decorators: [(Story) => html`<div class="container">${Story()}</div>`],
   parameters: {
     controls: {
       matchers: {
@@ -17,13 +17,17 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    backgrounds: {
+      default: "dark",
+      values: [{ name: "dark", value: "#000000" }],
+    },
     docs: {
-      theme: themes.light,
+      theme: themes.dark,
     },
     a11y: {
       test: "error",
     },
-    layout: "centered",
+    layout: "fullscreen",
   },
 };
 
