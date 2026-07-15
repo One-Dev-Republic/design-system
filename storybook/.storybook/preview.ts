@@ -19,7 +19,7 @@ const preview: Preview = {
     },
     backgrounds: {
       default: "dark",
-      values: [{ name: "dark", value: "#000000" }],
+      values: [{ name: "dark", value: "oklch(20.5% 0 0)" }],
     },
     docs: {
       theme: themes.dark,

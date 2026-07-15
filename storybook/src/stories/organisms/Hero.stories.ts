@@ -7,7 +7,7 @@ import translations from "../../translations/en";
 const heroTranslations = translations["odr-hero"] as HeroTranslations;
 
 const meta: Meta<Hero & { translations: HeroTranslations }> = {
-  title: "Organisms/Hero",
+  title: "Molecules/Hero",
   component: "odr-hero",
   tags: ["autodocs"],
   argTypes: {

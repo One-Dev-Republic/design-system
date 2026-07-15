@@ -8,8 +8,7 @@
   --main-accent-hover: #eb9c54;
   --text: oklch(70.8% 0 0);
   --muted: #6b7280;
-  --bg: #000;
-
+  --bg: oklch(20.5% 0 0);
   /**
    * Global font variables
    */

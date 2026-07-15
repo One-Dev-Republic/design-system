@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
+    "dev:debug": "storybook dev -p 6006 --no-open --initial-path '/?themeDebug=1'",
     "build": "tsc && vite build",
     "prebuild:storybook": "pnpm --filter ui-components build",
     "build-storybook": "pnpm prebuild:storybook && storybook build",
