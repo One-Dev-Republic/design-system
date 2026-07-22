@@ -11,7 +11,7 @@
     "prepare": "husky",
     "test": "pnpm --filter ui-components test -- --run",
     "test-coverage": "pnpm --filter ui-components coverage -- --run",
-    "chromatic": "pnpm --filter ui-components chromatic -- --run"
+    "chromatic": "pnpm --filter storybook chromatic -- --run"
   },
   "keywords": [
     "design system",
