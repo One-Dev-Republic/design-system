@@ -1,3 +1,4 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
 import css from "@eslint/css";
 import js from "@eslint/js";
 import json from "@eslint/json";
@@ -6,6 +7,7 @@ import type { Linter } from "eslint";
 import { defineConfig } from "eslint/config";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+import storybook from "eslint-plugin-storybook";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
@@ -69,4 +71,5 @@ export default defineConfig([
     extends: ["css/recommended"],
   },
   eslintPluginPrettierRecommended,
+  ...storybook.configs["flat/recommended"],
 ]);

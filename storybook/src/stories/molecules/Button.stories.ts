@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/web-components-vite";
-import { html } from "lit";
 import { Button } from "ui-components";
 
 const meta: Meta<Button> = {
@@ -7,9 +6,20 @@ const meta: Meta<Button> = {
   component: "ord-button",
   tags: ["autodocs"],
   argTypes: {
-    name: { control: "text" },
+    msg: {
+      description: "The text displayed on the button.",
+      control: "text",
+    },
+    type: {
+      description: "The style of the button, either primary or secondary.",
+      control: { type: "select" },
+      options: ["primary", "secondary"],
+    },
+    disabled: {
+      description: "Whether the button is disabled.",
+      control: "boolean",
+    },
   },
-  render: () => html`<ord-button name="Primary Button"></ord-button>`,
 };
 
 export default meta;
@@ -17,6 +27,22 @@ type Story = StoryObj<Button>;
 
 export const Primary: Story = {
   args: {
-    name: "Primary Button",
+    msg: "Primary",
+    type: "primary",
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    msg: "Secondary",
+    type: "secondary",
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    type: "primary",
+    msg: "Disabled",
+    disabled: true,
   },
 };

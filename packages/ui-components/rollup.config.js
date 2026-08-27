@@ -46,7 +46,12 @@ export default [
         preserveModulesRoot: "src",
       },
     ],
-    external: ["lit", "lit/html", "lit/decorators.js"],
+    external: [
+      /^lit($|\/)/,
+      /^lit-html($|\/)/,
+      /^@lit\/($|\/)/,
+      "lit/decorators.js",
+    ],
   },
   {
     input: "src/index.ts",

@@ -26,7 +26,7 @@
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^2.0.1",
     "@eslint/markdown": "^8.0.3",
-    "@storybook/web-components-vite": "^10.4.6",
+    "@storybook/web-components-vite": "^10.5.10",
     "@types/node": "^26.1.1",
     "eslint": "^10.6.0",
     "eslint-config-prettier": "^10.1.8",
