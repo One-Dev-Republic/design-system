@@ -131,8 +131,8 @@ importers:
         specifier: 10.5.10
         version: 10.5.10(@types/react@19.2.17)(esbuild@0.28.1)(rollup@4.62.2)(storybook@10.5.10(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vite@8.1.4(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0))
       '@storybook/addon-vitest':
-        specifier: 10.5.10
-        version: 10.5.10(@vitest/browser-playwright@4.1.10)(@vitest/browser@4.1.10)(@vitest/runner@4.1.10)(react@19.2.7)(storybook@10.5.10(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vitest@4.1.10)
+        specifier: 10.6.2
+        version: 10.6.2(@vitest/browser-playwright@4.1.10)(@vitest/browser@4.1.10)(@vitest/runner@4.1.10)(react@19.2.7)(storybook@10.5.10(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vitest@4.1.10)
       '@storybook/web-components-vite':
         specifier: 10.5.10
         version: 10.5.10(esbuild@0.28.1)(lit@3.3.3)(rollup@4.62.2)(storybook@10.5.10(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vite@8.1.4(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0))
@@ -1157,14 +1157,14 @@ packages:
       '@types/react':
         optional: true
 
-  '@storybook/addon-vitest@10.5.10':
-    resolution: {integrity: sha512-JNQ9DSkLfxC8qqytBCej91zBExIZ7z97B410U2zgfQPki4HkI9Ffz97a15f5yhVZ79ppIrZ/ssI+WcyWn0ykXQ==}
+  '@storybook/addon-vitest@10.6.2':
+    resolution: {integrity: sha512-gyyBzncvUyEgWQR3LinnGuI4UsWIUYLyw1u8i244aTxmY4uxCYjsDmUNkaSr8xQzNz8nh2Ckh3G4bO4SvJ6nJQ==}
     peerDependencies:
-      '@vitest/browser': ^3.0.0 || ^4.0.0
-      '@vitest/browser-playwright': ^4.0.0
-      '@vitest/runner': ^3.0.0 || ^4.0.0
-      storybook: ^10.5.10
-      vitest: ^3.0.0 || ^4.0.0
+      '@vitest/browser': ^3.0.0 || ^4.0.0 || ^5.0.0
+      '@vitest/browser-playwright': ^4.0.0 || ^5.0.0
+      '@vitest/runner': ^3.0.0 || ^4.0.0 || ^5.0.0
+      storybook: ^10.6.2
+      vitest: ^3.0.0 || ^4.0.0 || ^5.0.0
     peerDependenciesMeta:
       '@vitest/browser':
         optional: true
@@ -3436,18 +3436,6 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.21.0:
-    resolution: {integrity: sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   ws@8.21.3:
     resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
     engines: {node: '>=10.0.0'}
@@ -4234,7 +4222,7 @@ snapshots:
       - vite
       - webpack
 
-  '@storybook/addon-vitest@10.5.10(@vitest/browser-playwright@4.1.10)(@vitest/browser@4.1.10)(@vitest/runner@4.1.10)(react@19.2.7)(storybook@10.5.10(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vitest@4.1.10)':
+  '@storybook/addon-vitest@10.6.2(@vitest/browser-playwright@4.1.10)(@vitest/browser@4.1.10)(@vitest/runner@4.1.10)(react@19.2.7)(storybook@10.5.10(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))(vitest@4.1.10)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 2.1.0(react@19.2.7)
@@ -4651,7 +4639,7 @@ snapshots:
       sirv: 3.0.2
       tinyrainbow: 3.1.0
       vitest: 4.1.10(@types/node@26.1.1)(@vitest/browser-playwright@4.1.10)(@vitest/coverage-v8@4.1.10)(@vitest/ui@4.1.10)(happy-dom@20.10.6)(jsdom@29.1.1)(vite@8.1.4(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0))
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - msw
@@ -5469,7 +5457,7 @@ snapshots:
       buffer-image-size: 0.6.4
       entities: 7.0.1
       whatwg-mimetype: 3.0.0
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -6921,8 +6909,6 @@ snapshots:
       strip-ansi: 6.0.1
 
   ws@7.5.11: {}
-
-  ws@8.21.0: {}
 
   ws@8.21.3: {}
 
